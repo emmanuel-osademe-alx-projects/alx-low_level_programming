@@ -1,2 +1,3 @@
 # Hello world project in C
 File 0-preprocessor is a script that runs a C file through the preprocessor and save the result into another file.
+File 1-compiler is a script that runs a C file through the preprocessor and assembly without linking.
