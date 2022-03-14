@@ -6,3 +6,4 @@ Project 3-name creates an executable file named cisfun
 5-printf uses printf to display string to stdo
 6-size outputs the different value range for each type
 100-intel generates the assembly code using intel syntax
+101-quote prints a text followed by a newline, to the standard error
