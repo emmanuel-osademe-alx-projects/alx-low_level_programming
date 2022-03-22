@@ -10,14 +10,12 @@ int main(void)
 {
 	char c;
 
-	if(c >= "A" && c <= "Z")
+	if (c >= "A" && c <= "Z")
 	{
-		printf("%c: %d\n", c, 1);
+		return (1);
 	}
 	else
 	{
-		printf("%c: %d\n", c, 0);
+		return (0);
 	}
-
-	return (0);
 }
