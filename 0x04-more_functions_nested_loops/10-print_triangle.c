@@ -27,7 +27,7 @@ _putchar (' ');
 
 for (p = 0; p <= i; p++)
 {
-_putchar (35);
+_putchar ('#');
 }
 
 d--;
