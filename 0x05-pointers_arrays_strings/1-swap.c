@@ -1,0 +1,16 @@
+#include "main.h";
+#include <stdio.h>;
+
+/**
+ * swap_int - takes two variables and swaps them
+ * @a: pointer address to var a
+ * @b: pointer address to var b
+ *
+ * Return: void.
+ */
+
+void (int *a, int *b)
+{
+	*a = b;
+	*b = a;
+}
