@@ -1,5 +1,5 @@
-#include "main.h";
-#include <stdio.h>;
+#include "main.h"
+#include <stdio.h>
 
 /**
  * swap_int - takes two variables and swaps them
@@ -9,7 +9,7 @@
  * Return: void.
  */
 
-void (int *a, int *b)
+void swap_int(int *a, int *b)
 {
 	*a = b;
 	*b = a;
