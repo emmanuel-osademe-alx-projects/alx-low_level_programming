@@ -12,10 +12,11 @@ void print_array(int *a, int n)
 {
 	int i = 0;
 
-	while (i < n)
+	while (a[i] != '\0')
 	{
 		_putchar(a[i]);
 		i++;
+		a++;
 	}
 	_putchar('\n');
 }
