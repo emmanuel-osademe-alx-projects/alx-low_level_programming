@@ -17,7 +17,7 @@ void print_array(int *a, int n)
 		len++;
 	}
 
-	if (len == n)
+	if (n >= len)
 		for (i = 0; i < len; i++)
 			_putchar(a[i]);
 
