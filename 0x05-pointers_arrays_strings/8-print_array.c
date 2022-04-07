@@ -10,13 +10,16 @@
 
 void print_array(int *a, int n)
 {
-	int i = 0;
+	int len = 0;
 
-	while (a[i] != '\0')
+	while (a[len] != '\0')
 	{
-		_putchar(a[i]);
-		i++;
-		a++;
+		len++;
 	}
+
+	if (len == n)
+		for (int i = 0; i < len; i++)
+			_putchar(a[i]);
+
 	_putchar('\n');
 }
