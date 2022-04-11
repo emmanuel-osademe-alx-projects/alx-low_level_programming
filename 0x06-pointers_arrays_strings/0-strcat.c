@@ -10,7 +10,7 @@
 
 char *_strcat(char *dest, char *src)
 {
-int len, len2, i;
+int len, len2, len3, i;
 
 len = 0, len2 = 0;
 
@@ -25,7 +25,9 @@ for (i = 0; i <= len2; i++)
 dest[len + i] = src[i];
 }
 
-dest[(len + len2 + 1)] = '\n';
+len3 = len + len2 + 1;
+
+dest[len3] = '\n';
 
 return (dest);
 }
