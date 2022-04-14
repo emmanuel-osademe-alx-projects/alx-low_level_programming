@@ -10,7 +10,7 @@ int main(void)
 {
     char s1[98] = "Hello ";
     char s2[] = "World!\n";
-    char *ptr;
+    /* char *ptr;*/
 
     /* first tets
     printf("%s\n", s1);
@@ -21,7 +21,7 @@ int main(void)
     printf("%s", ptr);
     */
 
-    /* second test */
+    /* second test 
     printf("%s\n", s1);
     printf("%s", s2);
     ptr = _strncat(s1, s2, 1);
@@ -32,6 +32,13 @@ int main(void)
     printf("%s", s1);
     printf("%s", s2);
     printf("%s", ptr);
+    */
+
+   /* third test */
+    printf("%d\n", _strcmp(s1, s2));
+    printf("%d\n", _strcmp(s2, s1));
+    printf("%d\n", _strcmp(s1, s1));
+    return (0);
 
     return (0);
 }
