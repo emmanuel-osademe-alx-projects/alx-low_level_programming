@@ -6,6 +6,7 @@
  *
  * Return: Always 0.
  */
+/* Used for fourth test
 void print_array(int *a, int n)
 {
     int i;
@@ -22,6 +23,7 @@ void print_array(int *a, int n)
     }
     printf("\n");
 }
+*/
 
 int main(void)
 {
@@ -59,13 +61,20 @@ int main(void)
      printf("%d\n", _strcmp(s1, s1));
      */
 
-    /* fourth test */
-
+    /* fourth test
     int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024, 1337};
-
     print_array(a, sizeof(a) / sizeof(int));
     reverse_array(a, 5);
     print_array(a, sizeof(a) / sizeof(int));
+    */
+
+   /* fifth test*/
+    char str[] = "Look up!\n";
+    char *ptr;
+
+    ptr = string_toupper(str);
+    printf("%s", ptr);
+    printf("%s", str);
 
     return (0);
 }
