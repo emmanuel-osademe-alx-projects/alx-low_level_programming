@@ -13,9 +13,8 @@ int i = 0, b;
 while (i < n / 2)
 {
 b = a[i];
-a[i] = a[n - 1];
-a[n - 1] = b;
-n--;
+a[i] = a[n - i - 1];
+a[n - i - 1] = b;
 i++;
 }
 }
