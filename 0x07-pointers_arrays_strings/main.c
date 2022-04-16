@@ -46,7 +46,8 @@ int main(void)
     return (0);
 }
 */
-/* Test - 1 */
+
+/* Test - 1 
 int main(void)
 {
     char buffer[98] = {0};
@@ -56,5 +57,21 @@ int main(void)
     _memcpy(buffer + 50, buffer2, 10);
     printf("-------------------------------------------------\n");
     simple_print_buffer(buffer, 98);    
+    return (0);
+}
+*/
+
+/* Test - 2*/
+int main(void)
+{
+    char *s = "hello";
+    char *f;
+
+    f = _strchr(s, 'l');
+
+    if (f != NULL)
+    {
+        printf("%s\n", f);
+    }
     return (0);
 }
