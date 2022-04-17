@@ -61,7 +61,7 @@ int main(void)
 }
 */
 
-/* Test - 2*/
+/* Test - 2
 int main(void)
 {
     char *s = "hello";
@@ -73,5 +73,23 @@ int main(void)
     {
         printf("%s\n", f);
     }
+    return (0);
+}
+*/
+
+/* Test - 7 */
+int main(void)
+{
+    char board[8][8] = {
+        {'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
+        {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+        {'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
+    };
+    print_chessboard(board);
     return (0);
 }
