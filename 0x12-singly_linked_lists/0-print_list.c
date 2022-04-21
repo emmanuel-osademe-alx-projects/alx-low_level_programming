@@ -5,26 +5,25 @@
 #include "lists.h"
 
 /**
- * print_lists - prints all elements of a list
+ * print_list - prints all elements of a list
  * @h: takes head of the list
- * 
- * Return: number of nodes in list 
+ * Return: number of nodes in list
  */
 size_t print_list(const list_t *h)
 {
-    size_t n;
+	size_t n;
 
-    n = 0;
+	n = 0;
 
-    while (h != NULL)
-    {
-        if (h->str == NULL)
-            printf("[%d] %s\n", 0, "(nil)");
-        else
-            printf("[%d] %s\n", h->len, h->str);
-        h = h->next;
-        n++;
-    }
+	while (h != NULL)
+	{
+		if (h->str == NULL)
+			printf("[%d] %s\n", 0, "(nil)");
+		else
+			printf("[%d] %s\n", h->len, h->str);
+		h = h->next;
+		n++;
+	}
 
-    return (n);
+	return (n);
 }
