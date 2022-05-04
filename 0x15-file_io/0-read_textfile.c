@@ -1,18 +1,21 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
 
 /**
- * read_textfile - reads a text file and prints the letters
- * @filename: filename.
- * @letters: numbers of letters printed.
- *
- * Return: ssize_t numbers of letters printed. It fails, returns 0.
+ * read_textfile - prints to sdout the number of letters provided
+ * @filename: filename
+ * @letters: number of letters to print
+ * Return: ssize_t number of characters printed
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	ssize_t nrd, nwr;
-	char *buf;
+	ssize_t rd, wr;
+	char *buffer;
 
+	/* check if file is null */
 	if (!filename)
 		return (0);
 
@@ -21,16 +24,24 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 
-	buf = malloc(sizeof(char) * (letters));
-	if (!buf)
+	buffer = malloc(sizeof(char) * (letters));
+
+	if (!buffer)
 		return (0);
 
-	nrd = read(fd, buf, letters);
-	nwr = write(STDOUT_FILENO, buf, nrd);
+	rd = read(fd, buffer, letters);
+
+	if (rd == -1)
+		return (0);
+
+	wr = write(STDOUT_FILENO, buffer, rd);
+
+	if (wr == -1)
+		return (0);
 
 	close(fd);
 
-	free(buf);
+	free(buffer);
 
-	return (nwr);
+	return (wr);
 }
